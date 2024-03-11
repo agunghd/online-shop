@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* ROOT VARIABLES */
+:root {
+  --color-primary: #7380ec;
+  --color-danger: #ff7782;
+  --color-success: #41f1b6;
+  --color-warning: #ffbb55;
+  --color-white: #3c3836;
+  --color-white1: #a89985;
+  --color-info-dark: #7d8da1;
+  --color-info-light: #dce1eb;
+  --color-dark: #363949;
+  --color-light: rgba(132, 139, 200, 0.18);
+  --color-primary-variant: #111e88;
+  --color-dark-variant: #677483;
+  --color-background: #fbf1c7;
+  --color-background1: #ebdbb2;
+
+  --card-border-radius: 2rem;
+  --border-radius-1: 0.4rem;
+  --border-radius-2: 0.8rem;
+  --border-radius-3: 1.2rem;
+
+  --card-padding: 1.8rem;
+  --padding-1: 1.2rem;
+
+  --box-shadow: 0 2rem 3rem var(--color-light);
+}
+
+/* ------------- DARK THEME VARIABLES ---------- */
+.dark-theme-variables{
+  --color-background: #3c3836;
+  --color-background1: #504945 ;
+  --color-white: #a89985;
+  --color-white1: ;
+  --color-dark: #edeffd;
+  --color-dark-variant: #a3bdcc;
+  --color-light: rgba(0, 0, 0, 0.4);
+  --box-shadow: 0 2rem 3rem var(--color-light);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+.header{
+  background: var(--color-background);
+  /*background-repeat:no-repeat;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
+  background-position:center;
+  padding: 20px 0 20px;*/
+}
+.header img{
+  width: 200px;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+nav{
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header ul li{
+  display: inline-block;
+  list-style: none;
+  margin-right: 60px;
+}
+
+.header ul li a{
+  text-decoration: none;
+  color: var(--color-white);
+}
+.maincont{
+
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 4rem;
+}
+
+.left-image img{
+  width: 450px;
+  
+}
+
+.titlebox{
+  position: flex;
+  float: left;
+  justify-content: center;
+  color: var(--color-white);
+  text-align: center;
+}
+
+.titlebox h1{
+  font-size: 40px;
+}
+
+.titlebox p{
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+/* -----loginbox----- */
+.loginbox{
+  margin-top: 2rem;
+  margin-bottom: 20px;
+  color: var(--color-white);
+  height: 450px;
+  width: 380px;
+  text-align: center;
+  background: var(--color-background1);
+  border-radius: 10px;
+  border: 1px solid var(--color-white);
+}
+.loginbox img{
+  margin-top: -40px;
+  width: 74px;
+  margin-bottom: 2px;
+
+}
+
+.loginbox h2{
+  font-size: 25px;
+  font-weight: 500;
+}
+.loginbox p{
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.loginbox input{
+  height: 30px;
+  width: 305px;
+  padding: 2px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid grey;
+  color: black;
+  background: var(--color-background1);
+}
+.loginbox h3{
+  margin-top: 8px ;
+  text-align: left;
+  font-size: 13px;
+  text-decoration: none;
+  font-weight: 600;
+  margin-left: 37px;
+  margin-bottom: 20px;;
+}
+.loginbox h3 a{
+  text-decoration: none;
+  color: #79742e;
+}
+.loginbox h4{
+  font-size: 13px;
+  font-weight: 500;
+  margin: 0 37px;
+  text-align: justify;
+}
+.loginbox h4 a{
+  text-decoration: none;
+  color: #79742e;
+  font-size: 14x;
+  font-weight: 600;
+}
+.loginbox h5{
+  justify-content: space-between;
+  display: flex;
+  margin: 45px 37px 0px;
+}
+.loginbox h5 a{
+  text-decoration: none;
+  color: #79742e;
+  transition: 0.2s ease;
+}
+.loginbox h5 a:hover{
+  text-decoration: none;
+  color: #a8a140;
+}
+.loginbox .btnsend{
+  border: 0px solid rgb(74, 131, 255);
+  padding: 8px 12px;
+  width: 100px;
+  border-radius: 10px;
+  color: white;
+  background: #79742e;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+.loginbox h5 .btnsend:hover{
+  color: white;
+  background: #a8a140;
+}
+
+/* -----Body1----- */
+
+.body1{
+  background: #fff;
+  width: 80%;
+  margin: auto;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.btnsel{
+  background-color: #fff;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+
+}
+.btn1{
+  margin-top: 32px;
+  border: 2px solid rgb(0,0,0,0);
+  padding: 12px 23px;
+  background: linear-gradient(rgb(235, 118, 51),rgba(255, 0, 0, 0.5));
+  border-radius: 10px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+}
+.btn1 a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+
+}
+
+
+
+
+/* ---responsif--- */
+
+@media screen and (min-width:1200px) and (max-width:1400px) {
+  .header{
+    height: 100vh;
+}
+}
+
+@media screen and (max-width: 950px){
+  .header img{
+    width: 140px;
+  }
+  .header ul li{
+    margin: 20px;
+  }
+  .maincont{
+    flex-direction: column;
+  }
+  .titlebox h1{
+    font-size: 40px;
+  }
+  .cari input{
+  width: 280px;
+  }
+  .caribtn input{
+  width: 130px;
+  padding-left: 10px;
+  }
+  .loginbox{
+    margin-top: 10px;
+    color: rgb(0, 0, 0);
+    height: 490px;
+    width: 380px;
+  }
+}
+
+@media screen and (max-width: 680px){
+
+  .header img{
+    width: 140px;
+  }
+  .header ul li{
+    margin: 15px;
+  }
+
+  .titlebox h1{
+    font-size: 40px;
+  }
+  .cari input{
+  width: 280px;
+  }
+  .caribtn input{
+  width: 130px;
+  padding-left: 10px;
+  }
+  .loginbox{
+    color: rgb(0, 0, 0);
+    height: 490px;
+    width: 380px;
+  }
+}
+
+@media screen and (max-width: 450px){
+
+  .header img{
+    width: 100px;
+  }
+  .header ul li{
+    margin: 3px;
+    font-size: 12px;
+    margin-right: 8px;
+  }
+
+  .titlebox h1{
+    font-size: 20px;
+  }
+  .cari input{
+  width: 220px;
+  }
+  .caribtn input{
+  width: 110px;
+  padding-left: 5px;
+  }
+  .loginbox{
+    color: rgb(0, 0, 0);
+    height: 490px;
+    width: 380px;
+  }
+}
+
+@media screen and (max-width: 391px){
+
+  .header img{
+    width: 80px;
+  }
+  .header ul li{
+    margin: 1px;
+    font-size: 10px;
+    margin-right: 8px;
+  }
+
+  .titlebox h1{
+    font-size: 20px;
+  }
+  .cari input{
+  width: 210px;
+  }
+  #btn1 {
+  width: 110px;
+  padding-left: 5px;
+  }
+  .loginbox{
+    height: 440px;
+    width: 320px;
+  }
+  .loginbox img{
+    margin-top: 15px;
+    width: 70px;
+    margin-bottom: 15px;
+  }
+  .loginbox h2{
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .loginbox p{
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 15px;
+  }
+  .loginbox input{
+    height: 30px;
+    width: 230px;
+    padding: 2px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid grey;
+  }
+}
+.box{
+  background-color: #fff;
+  border: 1px solid #000000;
+  padding: 15px;
+  box-sizing: border-box;
+  margin: 10px 0 25px 0;
+}
